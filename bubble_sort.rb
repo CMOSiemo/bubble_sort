@@ -2,6 +2,7 @@
 
 def sorted?(array)
 
+  #Method that checks if the array is sorted
   holder = false
 
   for value in 0..(array.size - 2)
@@ -24,10 +25,12 @@ end
 
 def bubble_sort(array)
 
+  #Checks if sorted
   until sorted?(array) do
    
     counter = 0
 
+    #Swap cycle
     for value in 0..(array.size - 2 - counter)
 
       if array[value] > array[value + 1]
@@ -40,6 +43,7 @@ def bubble_sort(array)
 
     end
 
+    #Optimization
     counter += 1
 
   end
